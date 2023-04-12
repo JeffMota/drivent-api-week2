@@ -13,7 +13,7 @@ async function getUniqueTicketType(id: number): Promise<TicketType> {
   });
 }
 
-async function getUserTickets(userId: number) {
+async function getEnrollment(userId: number) {
   return await prisma.enrollment.findFirst({
     where: {
       userId,
@@ -29,9 +29,16 @@ async function getTicketByEnrollment(enrollmentId: number) {
   });
 }
 
+async function postTicket(data: any) {
+  return await prisma.ticket.create({
+    data,
+  });
+}
+
 export default {
   getTicketsTypes,
-  getUserTickets,
+  getEnrollment,
   getTicketByEnrollment,
   getUniqueTicketType,
+  postTicket,
 };
