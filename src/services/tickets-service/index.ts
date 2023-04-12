@@ -7,7 +7,7 @@ async function getTicketsTypes() {
 }
 
 async function getUserTickets(userId: number) {
-  const enrollment = await ticketsRepository.getEnrollment(userId);
+  const enrollment = await ticketsRepository.getEnrollmentByUserId(userId);
   if (!enrollment) throw notFoundError();
 
   const ticket = await ticketsRepository.getTicketByEnrollment(enrollment.id);
@@ -35,7 +35,7 @@ async function getUserTickets(userId: number) {
 }
 
 async function postTicket(ticketTypeId: number, userId: number) {
-  const enrollment = await ticketsRepository.getEnrollment(userId);
+  const enrollment = await ticketsRepository.getEnrollmentByUserId(userId);
   if (!enrollment) throw notFoundError();
 
   const ticket = await ticketsRepository.postTicket({

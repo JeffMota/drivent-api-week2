@@ -1,6 +1,5 @@
 import { Request, Response } from 'express';
 import ticketsService from '@/services/tickets-service';
-import ticketsRepository from '@/repositories/tickets-repository';
 
 export async function getTicketsTypes(req: Request, res: Response) {
   try {
