@@ -13,25 +13,7 @@ async function getUserTickets(userId: number) {
   const ticket = await ticketsRepository.getTicketByEnrollment(enrollment.id);
   if (!ticket) throw notFoundError();
 
-  const type = await ticketsRepository.getUniqueTicketType(ticket.ticketTypeId);
-
-  return {
-    id: ticket.id,
-    status: ticket.status,
-    ticketTypeId: ticket.ticketTypeId,
-    enrollmentId: ticket.enrollmentId,
-    TicketType: {
-      createdAt: type.createdAt,
-      id: type.id,
-      includesHotel: type.includesHotel,
-      isRemote: type.isRemote,
-      name: type.name,
-      price: type.price,
-      updatedAt: type.updatedAt,
-    },
-    createdAt: ticket.createdAt,
-    updatedAt: ticket.updatedAt,
-  };
+  return ticket;
 }
 
 async function postTicket(ticketTypeId: number, userId: number) {
@@ -44,25 +26,9 @@ async function postTicket(ticketTypeId: number, userId: number) {
     status: 'RESERVED',
   });
 
-  const type = await ticketsRepository.getUniqueTicketType(ticket.ticketTypeId);
+  const result = await ticketsRepository.getTicketById(ticket.id);
 
-  return {
-    id: ticket.id,
-    status: ticket.status,
-    ticketTypeId: ticket.ticketTypeId,
-    enrollmentId: ticket.enrollmentId,
-    TicketType: {
-      createdAt: type.createdAt,
-      id: type.id,
-      includesHotel: type.includesHotel,
-      isRemote: type.isRemote,
-      name: type.name,
-      price: type.price,
-      updatedAt: type.updatedAt,
-    },
-    createdAt: ticket.createdAt,
-    updatedAt: ticket.updatedAt,
-  };
+  return result;
 }
 
 export default {

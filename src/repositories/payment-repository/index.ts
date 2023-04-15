@@ -1,4 +1,5 @@
 import { prisma } from '@/config';
+import { InsertPayment } from '@/protocols';
 
 async function getTicketPayment(ticketId: number) {
   return await prisma.payment.findFirst({
@@ -8,7 +9,7 @@ async function getTicketPayment(ticketId: number) {
   });
 }
 
-async function paymentProcess(data: any) {
+async function paymentProcess(data: InsertPayment) {
   return await prisma.payment.create({
     data,
   });

@@ -18,6 +18,9 @@ async function getTicketById(id: number) {
     where: {
       id,
     },
+    include: {
+      TicketType: true,
+    },
   });
 }
 
@@ -41,6 +44,9 @@ async function getTicketByEnrollment(enrollmentId: number) {
   return await prisma.ticket.findFirst({
     where: {
       enrollmentId,
+    },
+    include: {
+      TicketType: true,
     },
   });
 }

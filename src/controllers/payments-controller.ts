@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import paymentService from '@/services/payments-service';
+import { PaymentBody } from '@/protocols';
 
 export async function getTicketPayment(req: Request, res: Response) {
   const userId = res.locals.userId;
@@ -20,7 +21,7 @@ export async function getTicketPayment(req: Request, res: Response) {
 
 export async function paymentProcess(req: Request, res: Response) {
   const userId = res.locals.userId;
-  const body = req.body;
+  const body = req.body as PaymentBody;
   if (!body.ticketId) return res.sendStatus(400);
   if (!body.cardData) return res.sendStatus(400);
 
