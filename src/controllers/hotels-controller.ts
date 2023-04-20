@@ -6,6 +6,7 @@ export async function getAllHotels(req: AuthenticatedRequest, res: Response) {
   const userId = Number(res.locals.userId);
   try {
     const hotels = await hotelsService.getAllHotels(userId);
+    if (hotels.length === 0) return res.sendStatus(404);
     res.send(hotels);
   } catch (error) {
     if (error.name === 'NotFoundError') return res.sendStatus(404);

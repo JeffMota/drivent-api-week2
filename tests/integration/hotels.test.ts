@@ -77,6 +77,24 @@ describe('GET /hotels', () => {
       expect(response.status).toBe(402);
     });
 
+    it('Should respond with status 404 if there is no hotel created', async () => {
+      const user = await createUser();
+      const token = await generateValidToken(user);
+      const enrollment = await createEnrollmentWithAddress(user);
+      const ticketType = await prisma.ticketType.create({
+        data: {
+          name: faker.name.findName(),
+          price: faker.datatype.number(),
+          isRemote: false,
+          includesHotel: true,
+        },
+      });
+      const ticket = await createTicket(enrollment.id, ticketType.id, 'PAID');
+      const response = await server.get('/hotels').set('Authorization', `Bearer ${token}`);
+
+      expect(response.status).toBe(404);
+    });
+
     it('Should respond with status 200 and with hotels data', async () => {
       const user = await createUser();
       const token = await generateValidToken(user);
