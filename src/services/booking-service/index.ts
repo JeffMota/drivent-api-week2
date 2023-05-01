@@ -32,7 +32,20 @@ async function postBooking(data: InsertBooking) {
   return booking;
 }
 
+async function changeBooking(bookingId: number, roomId: number, userId: number) {
+  const userBooking = await bookingRepository.getUserBooking(userId);
+  if (!userBooking) throw unauthorizedError();
+
+  const room = await hotelsRepository.getRoomById(roomId);
+  if (!room) throw notFoundError();
+
+  if (room.Booking.length === room.capacity) throw unauthorizedError();
+
+  return await bookingRepository.changeBooking(bookingId, roomId);
+}
+
 export default {
   getUserBooking,
   postBooking,
+  changeBooking,
 };
