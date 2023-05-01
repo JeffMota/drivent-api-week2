@@ -42,3 +42,8 @@ export type PaymentBody = {
     cvv: number;
   };
 };
+
+export type InsertBooking = {
+  userId: number;
+  roomId: number;
+};

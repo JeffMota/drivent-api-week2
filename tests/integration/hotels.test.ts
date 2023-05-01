@@ -2,7 +2,7 @@ import faker from '@faker-js/faker';
 import supertest from 'supertest';
 import { cleanDb, generateValidToken } from '../helpers';
 import { createEnrollmentWithAddress, createTicket, createTicketType, createUser } from '../factories';
-import { createBooking, createHotel, createRooms } from '../factories/hotels-factory';
+import { createHotel, createRooms } from '../factories/hotels-factory';
 import app, { init } from '@/app';
 import { prisma } from '@/config';
 
