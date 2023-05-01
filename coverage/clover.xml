@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1682953453677" clover="3.2.0">
-  <project timestamp="1682953453677" name="All files">
-    <metrics statements="559" coveredstatements="523" conditionals="90" coveredconditionals="70" methods="93" coveredmethods="85" elements="742" coveredelements="678" complexity="0" loc="559" ncloc="559" packages="26" files="64" classes="64"/>
+<coverage generated="1682965536529" clover="3.2.0">
+  <project timestamp="1682965536529" name="All files">
+    <metrics statements="576" coveredstatements="540" conditionals="94" coveredconditionals="74" methods="96" coveredmethods="88" elements="766" coveredelements="702" complexity="0" loc="576" ncloc="576" packages="26" files="64" classes="64"/>
     <package name="src">
       <metrics statements="22" coveredstatements="16" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="2"/>
       <file name="app.ts" path="/home/jeffersonmota/Dev/Driven/Projetos/DrivenT/drivent-api/src/app.ts">
@@ -59,7 +59,7 @@
       </file>
     </package>
     <package name="src.controllers">
-      <metrics statements="128" coveredstatements="120" conditionals="19" coveredconditionals="18" methods="15" coveredmethods="15"/>
+      <metrics statements="137" coveredstatements="129" conditionals="20" coveredconditionals="19" methods="16" coveredmethods="16"/>
       <file name="authentication-controller.ts" path="/home/jeffersonmota/Dev/Driven/Projetos/DrivenT/drivent-api/src/controllers/authentication-controller.ts">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="11" type="stmt"/>
@@ -72,7 +72,7 @@
         <line num="13" count="2" type="stmt"/>
       </file>
       <file name="booking-controller.ts" path="/home/jeffersonmota/Dev/Driven/Projetos/DrivenT/drivent-api/src/controllers/booking-controller.ts">
-        <metrics statements="16" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <metrics statements="25" coveredstatements="25" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
         <line num="2" count="11" type="stmt"/>
         <line num="5" count="11" type="stmt"/>
         <line num="6" count="2" type="stmt"/>
@@ -89,6 +89,15 @@
         <line num="27" count="1" type="stmt"/>
         <line num="29" count="5" type="cond" truecount="1" falsecount="0"/>
         <line num="30" count="4" type="stmt"/>
+        <line num="34" count="11" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="39" count="4" type="stmt"/>
+        <line num="40" count="4" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="43" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="44" count="2" type="stmt"/>
       </file>
       <file name="enrollments-controller.ts" path="/home/jeffersonmota/Dev/Driven/Projetos/DrivenT/drivent-api/src/controllers/enrollments-controller.ts">
         <metrics statements="20" coveredstatements="19" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="3"/>
@@ -241,7 +250,7 @@
       <file name="invalid-data-error.ts" path="/home/jeffersonmota/Dev/Driven/Projetos/DrivenT/drivent-api/src/errors/invalid-data-error.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="11" type="stmt"/>
-        <line num="4" count="10" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
       </file>
       <file name="invalid-email-error.ts" path="/home/jeffersonmota/Dev/Driven/Projetos/DrivenT/drivent-api/src/errors/invalid-email-error.ts">
         <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
@@ -251,7 +260,7 @@
       <file name="not-found-error.ts" path="/home/jeffersonmota/Dev/Driven/Projetos/DrivenT/drivent-api/src/errors/not-found-error.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="11" type="stmt"/>
-        <line num="4" count="14" type="stmt"/>
+        <line num="4" count="15" type="stmt"/>
       </file>
       <file name="payment-required-error.ts" path="/home/jeffersonmota/Dev/Driven/Projetos/DrivenT/drivent-api/src/errors/payment-required-error.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -266,7 +275,7 @@
       <file name="unauthorized-error.ts" path="/home/jeffersonmota/Dev/Driven/Projetos/DrivenT/drivent-api/src/errors/unauthorized-error.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="3" count="11" type="stmt"/>
-        <line num="4" count="33" type="stmt"/>
+        <line num="4" count="37" type="stmt"/>
         <line num="10" count="11" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
       </file>
@@ -280,19 +289,19 @@
         <line num="5" count="11" type="stmt"/>
         <line num="6" count="11" type="stmt"/>
         <line num="8" count="11" type="stmt"/>
-        <line num="9" count="78" type="stmt"/>
-        <line num="10" count="78" type="cond" truecount="1" falsecount="0"/>
-        <line num="12" count="67" type="stmt"/>
-        <line num="13" count="67" type="cond" truecount="0" falsecount="1"/>
-        <line num="15" count="67" type="stmt"/>
-        <line num="16" count="67" type="stmt"/>
-        <line num="18" count="56" type="stmt"/>
-        <line num="23" count="56" type="cond" truecount="1" falsecount="0"/>
-        <line num="25" count="49" type="stmt"/>
-        <line num="26" count="49" type="stmt"/>
-        <line num="28" count="49" type="stmt"/>
-        <line num="30" count="11" type="stmt"/>
-        <line num="35" count="29" type="stmt"/>
+        <line num="9" count="86" type="stmt"/>
+        <line num="10" count="86" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="74" type="stmt"/>
+        <line num="13" count="74" type="cond" truecount="0" falsecount="1"/>
+        <line num="15" count="74" type="stmt"/>
+        <line num="16" count="74" type="stmt"/>
+        <line num="18" count="62" type="stmt"/>
+        <line num="23" count="62" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="55" type="stmt"/>
+        <line num="26" count="55" type="stmt"/>
+        <line num="28" count="55" type="stmt"/>
+        <line num="30" count="12" type="stmt"/>
+        <line num="35" count="31" type="stmt"/>
       </file>
       <file name="error-handling-middleware.ts" path="/home/jeffersonmota/Dev/Driven/Projetos/DrivenT/drivent-api/src/middlewares/error-handling-middleware.ts">
         <metrics statements="14" coveredstatements="2" conditionals="7" coveredconditionals="0" methods="1" coveredmethods="0"/>
@@ -322,14 +331,14 @@
         <line num="2" count="11" type="stmt"/>
         <line num="4" count="11" type="stmt"/>
         <line num="6" count="11" type="stmt"/>
-        <line num="7" count="55" type="stmt"/>
+        <line num="7" count="66" type="stmt"/>
         <line num="10" count="11" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="15" count="55" type="stmt"/>
-        <line num="16" count="32" type="stmt"/>
-        <line num="20" count="32" type="cond" truecount="2" falsecount="0"/>
-        <line num="21" count="22" type="stmt"/>
-        <line num="23" count="26" type="stmt"/>
+        <line num="15" count="66" type="stmt"/>
+        <line num="16" count="38" type="stmt"/>
+        <line num="20" count="38" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="26" type="stmt"/>
+        <line num="23" count="28" type="stmt"/>
       </file>
     </package>
     <package name="src.repositories.address-repository">
@@ -343,13 +352,14 @@
       </file>
     </package>
     <package name="src.repositories.booking-repository">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="index.ts" path="/home/jeffersonmota/Dev/Driven/Projetos/DrivenT/drivent-api/src/repositories/booking-repository/index.ts">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="1" count="11" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
-        <line num="22" count="11" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="33" count="11" type="stmt"/>
       </file>
     </package>
     <package name="src.repositories.enrollment-repository">
@@ -380,7 +390,7 @@
         <line num="1" count="11" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
+        <line num="19" count="7" type="stmt"/>
         <line num="29" count="11" type="stmt"/>
       </file>
     </package>
@@ -435,7 +445,7 @@
       </file>
     </package>
     <package name="src.routers">
-      <metrics statements="69" coveredstatements="69" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="70" coveredstatements="70" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="authentication-router.ts" path="/home/jeffersonmota/Dev/Driven/Projetos/DrivenT/drivent-api/src/routers/authentication-router.ts">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="11" type="stmt"/>
@@ -447,7 +457,7 @@
         <line num="10" count="11" type="stmt"/>
       </file>
       <file name="booking-router.ts" path="/home/jeffersonmota/Dev/Driven/Projetos/DrivenT/drivent-api/src/routers/booking-router.ts">
-        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="11" type="stmt"/>
         <line num="2" count="11" type="stmt"/>
         <line num="3" count="11" type="stmt"/>
@@ -456,7 +466,8 @@
         <line num="8" count="11" type="stmt"/>
         <line num="9" count="11" type="stmt"/>
         <line num="10" count="11" type="stmt"/>
-        <line num="12" count="11" type="stmt"/>
+        <line num="11" count="11" type="stmt"/>
+        <line num="13" count="11" type="stmt"/>
       </file>
       <file name="enrollments-router.ts" path="/home/jeffersonmota/Dev/Driven/Projetos/DrivenT/drivent-api/src/routers/enrollments-router.ts">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -628,9 +639,9 @@
       </file>
     </package>
     <package name="src.services.booking-service">
-      <metrics statements="19" coveredstatements="19" conditionals="9" coveredconditionals="9" methods="2" coveredmethods="2"/>
+      <metrics statements="25" coveredstatements="25" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
       <file name="index.ts" path="/home/jeffersonmota/Dev/Driven/Projetos/DrivenT/drivent-api/src/services/booking-service/index.ts">
-        <metrics statements="19" coveredstatements="19" conditionals="9" coveredconditionals="9" methods="2" coveredmethods="2"/>
+        <metrics statements="25" coveredstatements="25" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
         <line num="1" count="11" type="stmt"/>
         <line num="3" count="11" type="stmt"/>
         <line num="4" count="11" type="stmt"/>
@@ -649,7 +660,13 @@
         <line num="28" count="2" type="cond" truecount="4" falsecount="0"/>
         <line num="30" count="1" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
-        <line num="35" count="11" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
+        <line num="37" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="39" count="3" type="stmt"/>
+        <line num="40" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="42" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="47" count="11" type="stmt"/>
       </file>
     </package>
     <package name="src.services.enrollments-service">
